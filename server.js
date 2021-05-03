@@ -12,6 +12,11 @@ app.get("/resume", function(req, res){
     let path = __dirname+"/frontend/html/resume.html";
     res.sendFile(path);
 })
+
+app.get("/search",function(req,res){
+    let path = __dirname+"/frontend/html/search.html";
+    res.sendFile(path);
+})
 // Heroku will automatically set an environment variable called PORT
 const PORT = process.env.PORT || 3000;
  

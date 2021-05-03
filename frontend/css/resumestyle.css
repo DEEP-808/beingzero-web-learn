@@ -1,0 +1,38 @@
+body{
+    font-family: monospace;
+    margin-left: 20px;
+}
+.header{
+    width: 100%;
+    height: auto;
+    font-family: monospace;
+}
+p{
+    font-size: larger;
+}
+h3{
+    font-size: x-large;
+}
+.declaration{
+    margin: left 0px;;
+    font-size: x-large;
+}
+h1{
+    margin:0px;
+}
+.top{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.logo{ 
+    float: left;
+}
+.quicklinks{
+    padding-bottom: 20px;
+}
+.project_description{
+    margin-left: 40px;
+    height: 100px;
+    width: 800px;
+    padding-bottom: 20px;
+}

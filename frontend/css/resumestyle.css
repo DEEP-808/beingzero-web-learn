@@ -14,7 +14,7 @@ h3{
     font-size: x-large;
 }
 .declaration{
-    margin: left 0px;;
+    margin:  40px;
     font-size: x-large;
 }
 h1{
@@ -28,11 +28,12 @@ h1{
     float: left;
 }
 .quicklinks{
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .project_description{
     margin-left: 40px;
     height: 100px;
     width: 800px;
     padding-bottom: 20px;
+    font-size: medium;
 }

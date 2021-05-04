@@ -7,17 +7,36 @@
     padding-left: 33%;
     
 }
+.gmail{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+.images{
+    text-decoration: none;
+    color: black;
+}
 .searchbar input[type=text] {
     border: 1px solid black;
     height: 30px;
     width: 500px;  
     border-radius: 25px;
   }
+.navbar{
+    float: right;
+    margin-right: 20px;
+}
 .buttons{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-left: 40%;
-<<<<<<< HEAD
 }
-=======
+.footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0cm;
+    background-color: grey;
 }
->>>>>>> ac53d594762f7c97a38d56dddfb81fa02e017b08
+p.footer{
+    float: left;
+    margin-right: 10px;
+}

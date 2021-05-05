@@ -1,0 +1,26 @@
+.sliders{
+    
+    padding-top: 50px;
+}
+
+.slider{
+    padding-left: 20px;
+    padding-right: 30px;
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+    float: left;
+}
+.colorbox{
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+    padding-top: 10%;
+    width: 500px;
+    height: 200px;
+    border: solid black;
+}
+body{
+    padding-top: 50px;
+    padding-left: 500px;
+}

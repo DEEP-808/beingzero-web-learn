@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/cstyle.css">
+</head>
+<body>
+    <div  class="colorbox" id="demo">
+        <p id="val">rgb(128,128,128)</p>
+    </div>
+    <div class="sliders">
+        <div class="slider">
+            <form>
+                <label id="color">red</label><br>
+                <input type="range" id="red range"  min="0" max="255" oninput=change()>
+            </form>
+        </div>
+        <div class="slider">
+            <form>
+                <label id="color">green</label><br>
+                <input type="range" id="green range"  min="0" max="255" oninput=change()>
+            </form>
+        </div>
+        <div class="slider">
+            <form>
+                <label id="color">blue</label><br>
+                <input type="range" id="blue range"  min="0" max="255" oninput=change()>
+            </form>
+        </div>
+        
+    </div>
+    <script src="/js/colors.js"></script>
+</body>
+</html>

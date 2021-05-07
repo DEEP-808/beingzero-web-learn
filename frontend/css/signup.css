@@ -1,0 +1,29 @@
+.container{
+    padding-left: 25%;
+    padding-top: 1%;
+}
+
+input[type=text], input[type=password],input[type=email] {
+    width: 25%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: gainsboro;
+}
+body{
+    font-family: monospace;
+    font-size: larger;
+}
+.end{
+    text-align: center;
+    font-family: monospace;
+    height: 30px;
+    width: 80px;
+}
+.heading{
+    font-size: xx-large;
+}
+.signup{
+    padding-top: 20px;
+}

@@ -1,0 +1,21 @@
+.container{
+    font-family: monospace;
+    padding-left: 35%;
+    padding-top: 15%;
+}
+.email{
+    padding-bottom: 20px;
+}
+#username{
+    font-size: larger;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+#pass{
+    font-size: larger;
+    padding-right: 69px;
+}
+.password{
+    padding-bottom: 20px;
+}

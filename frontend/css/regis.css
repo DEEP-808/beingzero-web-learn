@@ -16,6 +16,26 @@
     font-size: larger;
     padding-right: 69px;
 }
+.lgbtn{
+    width: 300px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+    background-color: #3366ff;
+}
+.signup{
+    padding-top: 20px;
+}
+.sgnbtn{
+    width: 300px;
+    height: 40px;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+    background-color: #ff471a;
+    ;
+}
 .password{
     padding-bottom: 20px;
 }

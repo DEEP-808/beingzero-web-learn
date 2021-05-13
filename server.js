@@ -18,6 +18,11 @@ app.get("/search",function(req,res){
     res.sendFile(path);
 })
 
+app.get("/todo",function(req,res){
+    let path = __dirname+"/frontend/html/todo.html";
+    res.sendFile(path);
+})
+
 app.get("/color",function(req,res){
     let path = __dirname+"/frontend/html/color.html";
     res.sendFile(path);

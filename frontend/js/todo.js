@@ -24,6 +24,9 @@ function addtolist(){
     console.log(arr);
 }
 
+function clickme(){
+    console.log("clicked");
+}
 
 function clearall(){
     console.log(arr);

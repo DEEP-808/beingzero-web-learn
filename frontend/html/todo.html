@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo</title>
+    <link rel="stylesheet" href="/frontend/css/todos.css">
 </head>
 <body>
-    <h1>ToDo List</h1>
+    <div class="title">
+        <h1>ToDo List</h1>
+    </div>
+    
     <div class="container">
         <input id="task" placeholder="Task ">
-        <button onclick="clearall()">Clear</button>
+        <button onclick="clearall()" id="Clear">Clear</button>
     </div>
     <div id="items" class="items">
         <ul class="todo">

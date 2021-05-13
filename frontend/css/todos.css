@@ -1,0 +1,35 @@
+.title{
+    padding-top: 50px;
+    text-align: center;
+    font-family: monospace;
+}
+.container{
+    padding-left: 300px;
+}
+.items{
+    padding-left: 300px;
+}
+#Clear{
+    padding: 13px;
+    font-family: monospace;
+}
+input{
+    width: 25%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: gainsboro;
+}
+
+.incomplete{
+    width: 25%;
+    cursor: pointer;
+    position: relative;
+    font-family: monospace;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}

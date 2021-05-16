@@ -1,15 +1,15 @@
-.title{
+h1{
     padding-top: 50px;
     text-align: center;
     font-family: monospace;
 }
 .container{
-    padding-left: 300px;
+    padding-left: 500px;
 }
 .items{
-    padding-left: 260px;
+    padding-left: 460px;
 }
-#Clear{
+#clear{
     padding: 13px;
     font-family: monospace;
 }
@@ -22,7 +22,7 @@ input{
     background-color: gainsboro;
 }
 
-.incomplete{
+.pend{
     width: 25%;
     cursor: pointer;
     position: relative;
@@ -44,8 +44,4 @@ input{
     background: red;
     font-size: 18px;
     transition: 0.2s;
-}
-
-.extra{
-    padding-left: 25%;
 }

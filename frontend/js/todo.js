@@ -19,9 +19,10 @@ function addtolist(){
     item.appendChild(document.createTextNode(data));
     //item.addEventListener("click",change);
     if(!complete)
-        complete+=(data+":pend/");
-    else
         complete=(data+":pend/");
+    else
+        complete+=(data+":pend/");
+        
     window.localStorage.allitems=complete;
     console.log("local storage");
     console.log(window.localStorage.allitems);
@@ -84,7 +85,7 @@ function onstart(){
         for(let i=0;i<items.length-1;i++)
         {
             var temp = items[i].split(':');
-            console.log(temp);
+            //console.log(temp);
             var newi = '<li class=' +temp[1]+'>'+temp[0] +'</li>';
             complete+=(temp[0]+':'+temp[1]+'/');
             list.innerHTML+=newi;

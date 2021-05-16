@@ -7,7 +7,7 @@
     padding-left: 300px;
 }
 .items{
-    padding-left: 300px;
+    padding-left: 260px;
 }
 #Clear{
     padding: 13px;
@@ -32,4 +32,20 @@ input{
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
+}
+
+.done{
+    width: 25%;
+    cursor: pointer;
+    position: relative;
+    font-family: monospace;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: red;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.extra{
+    padding-left: 25%;
 }

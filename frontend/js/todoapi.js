@@ -1,6 +1,6 @@
 function add()
 {
-    if ( document.getElementById("input").value=="")
+    if(document.getElementById("input").value=="")
         return;
     var data = {task: document.getElementById( "input" ).value, todoID: Date.now()};
     console.log(data);
@@ -11,15 +11,15 @@ function add()
     } );
     var item = document.getElementById("todo");
     item.innerHTML+=`\n<div class="item" id="${data.todoID}" ><label id="txt/${data.todoID}">${data.task}</label><button id="${data.todoID}" class="btn" onclick="Erase(this)">X</button></div>\n`;
-    document.getElementById( "input" ).value = "";
+    document.getElementById("input").value = "";
 }
 
-function Erase( obj )
+function Erase(e)
 {
-    var todoID = $( obj ).attr( 'id' );
-    $.ajax( {
+    var todoID = $(e).attr('id');
+    $.ajax({
         url: `http://${window.location.host}/api/todo/${todoID}`,
         method: "Erase"
-    } );
-    document.getElementById( `div-${todoID}` ).remove();
+    });
+    document.getElementById(`${todoID}`).remove();
 }

@@ -1,0 +1,18 @@
+.container{
+    padding-left: 30%;
+    padding-top: 100px;
+}
+
+#input{
+    width: 25%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background-color: gainsboro;
+}
+
+label {
+    width:200px;
+    display: inline-block;
+  }

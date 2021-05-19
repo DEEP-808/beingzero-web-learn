@@ -3,6 +3,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const userTab = require("./backend/model/coursemodel");
 const app = express();
+app.use(express.static('frontend'));
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 
 const DBoptions={};
 
@@ -10,19 +13,9 @@ var password = process.env.DBatlas_password;
 console.log("password is :",password);
 const connectionString="mongodb+srv://deepaknad:"+"Deepak4D6"+"@cluster0.vkpay.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"; 
 mongoose.connect(connectionString, { useUnifiedTopology: true, useNewUrlParser: true }).catch(err => console.error(err));
-// mongoose.connection.on('connected', function(){
-//     console.log("DataBase connected");
-// })
+
 mongoose.connection.on('connected',function(){
     console.log("DataBase connection established");
-})
-
-mongoose.connection.on('connecting',function(){
-    console.log("DB connecting");
-})
-
-mongoose.connection.on('connecting',function(){
-    console.log("DB connecting");
 })
 // courselib.createcourse({name:'mean stack course',Articles:21},function(err,course){
 //     console.log(course);
@@ -100,14 +93,6 @@ app.put('/crud/put:id', function(req, res){
 //     {username: 'admin1', email:'deep@12m.com' , id: 1},
 //     {username: 'admin2', email:'deep@13m.com' , id: 2}
 // ];
-
-
-app.use(express.static('frontend'));
-app.use(express.urlencoded({extended:true}));
-app.use(express.json());
-// app.get("/", function(req, res){
-//     res.send("Welcome to My Basic Site");
-// })
  
 app.get("/resume", function(req, res){
     let path = __dirname+"/frontend/html/resume.html";

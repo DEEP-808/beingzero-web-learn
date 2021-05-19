@@ -1,7 +1,7 @@
 const { json } = require('express');
 const express = require('express');
 const mongoose = require('mongoose');
-const userTab = require("./backend/model/coursemodelS");
+const userTab = require("./backend/model/coursemodel");
 const app = express();
 
 const DBoptions={};
@@ -35,10 +35,10 @@ mongoose.connection.on('connecting',function(){
 // courselib.createcourse({coursename:'java course'},function(err,course){
 //     console.log(course);
 // })
-console.log("Current courses");
-courselib.getallcourses(function(err,courseobjarr){
-    console.log(courseobjarr);
-});
+// console.log("Current courses");
+// courselib.getallcourses(function(err,courseobjarr){
+//     console.log(courseobjarr);
+// });
 
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/frontend/html/crud.html");

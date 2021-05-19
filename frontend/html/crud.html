@@ -1,4 +1,64 @@
-var newId = 4
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Operations</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Basic CRUD operations">
+    <meta name="keywords" content="CRUD operation in JS, CRUD operation in Jquery">
+    <meta name="author" content="Being Zero Pvt Ltd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .result {
+            max-width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <button class="btn btn-sm btn-primary" id="add-test">Add Course</button>
+                <div class="clearfix"><br /></div>
+                <div class="card card-body">
+                    <!-- Form Wrapper & Button -->
+                    <div class="form-wrapper hidden" style="width: 61%;">
+                        <select class="form-control" id="test-name" style="margin: 10px;">
+                            <option selected>select course</option>
+                            <option>Java</option>
+                            <option>Paython</option>
+                            <option>Php</option>
+                        </select>
+                        <input class="form-control" placeholder=" Enter no of articels" type="number" id="test-result" style="margin: 10px;">
+                        <button class="btn btn-sm btn-info" id="create-test" style="margin: 10px;">Add</button>
+                    </div>
+                    <!-- Data Table -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Courses</th>
+                                <th scope="col">Articels</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tests-table"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var newId = 4
     var newTest = { 'name': null, 'id': newId, 'Articels': null }
 
     $('#add-test').on('click', function () {
@@ -150,3 +210,4 @@ var newId = 4
     });
 
     }
+</script>

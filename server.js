@@ -1,37 +1,16 @@
 const { json } = require('express');
 const express = require('express');
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
+const config = require('./backend/config/config');
 const userTab = require("./backend/model/coursemodel");
+const DBconnect = require('./backend/lib/DBconnect');
 const app = express();
 app.use(express.static('frontend'));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-
-const DBoptions={};
-
-var password = process.env.DBatlas_password;
-console.log("password is :",password);
-const connectionString="mongodb+srv://deepaknad:"+"Deepak4D6"+"@cluster0.vkpay.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"; 
-mongoose.connect(connectionString, { useUnifiedTopology: true, useNewUrlParser: true }).catch(err => console.error(err));
-
-mongoose.connection.on('connected',function(){
-    console.log("DataBase connection established");
-})
-// courselib.createcourse({name:'mean stack course',Articles:21},function(err,course){
-//     console.log(course);
-// })
-
-// courselib.createcourse({coursename:'pyhton course'},function(err,course){
-//     console.log(course);
-// })
-
-// courselib.createcourse({coursename:'java course'},function(err,course){
-//     console.log(course);
-// })
-// console.log("Current courses");
-// courselib.getallcourses(function(err,courseobjarr){
-//     console.log(courseobjarr);
-// });
+// console.log(config.dbConnectionString);
+// console.log(config.connectPort);
+DBconnect.connect();
 
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/frontend/html/crud.html");
@@ -78,12 +57,13 @@ app.post('/crud/post',function(req, res){
 
 app.put('/crud/put:id', function(req, res){
     var i=req.params.id
+    console.log(i);
     userTab.findByIdAndUpdate(i,function(err,obj){
         if(err)
         console.log("ERROR:"+err)
         else {
             console.log(obj.Articels)
-        var obj={Articels: obj.Articels }
+            var obj={Articels: obj.Articels }
         }
 })
 })

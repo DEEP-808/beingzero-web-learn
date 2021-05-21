@@ -94,7 +94,10 @@ app.get("/color",function(req,res){
     res.sendFile(path);
 })
 
-
+app.get("/housie",function(req,res){
+    let path = __dirname+"/frontend/html/housie.html";
+    res.sendFile(path);
+})
 
 app.get('api/users/:userId',function(req,res){
     var userId = req.params.userId;
@@ -176,7 +179,7 @@ app.get("/register",function(req,res){
     res.sendFile(path);
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = config.connectPort|| 3000;
  
 app.listen(PORT, function(){
     console.log("Server Starting running on http://localhost:"+PORT);
